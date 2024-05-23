@@ -1,0 +1,90 @@
+[
+    {
+        "titulo": "Java a fondo",
+        "autor": "Pablo Augusto Sznajdleder",
+        "a\u00f1o_publicacion": "2013-09-10",
+        "disponible": true,
+        "unidades": 3,
+        "libros_prestados": 0
+    },
+    {
+        "titulo": "Patrones de dise\u00f1o en Java",
+        "autor": "Laurent Debrauwer",
+        "a\u00f1o_publicacion": "2013",
+        "disponible": true,
+        "unidades": 5,
+        "libros_prestados": 0
+    },
+    {
+        "titulo": "Python Aplicado",
+        "autor": "Eugenia Bahit",
+        "a\u00f1o_publicacion": "2022-01-27",
+        "disponible": true,
+        "unidades": 4,
+        "libros_prestados": 0
+    },
+    {
+        "titulo": "Python 3 al descubierto - 2a ed.",
+        "autor": "Arturo FERNANDEZ",
+        "a\u00f1o_publicacion": "2013-09-30",
+        "disponible": true,
+        "unidades": 2,
+        "libros_prestados": 0
+    },
+    {
+        "titulo": "Python: La Gu\u00eda Definitiva para Principiantes para Dominar Python",
+        "autor": "Jonathan S. Walker",
+        "a\u00f1o_publicacion": "2018-09-07",
+        "disponible": true,
+        "unidades": 7,
+        "libros_prestados": 0
+    },
+    {
+        "titulo": "Python",
+        "autor": "Larry Lutz",
+        "a\u00f1o_publicacion": "2018-05",
+        "disponible": true,
+        "unidades": 2,
+        "libros_prestados": 0
+    },
+    {
+        "titulo": "C\u00f3mo elegir y utilizar software educativo",
+        "autor": "David Squires, Anne McDougall",
+        "a\u00f1o_publicacion": "1997-07-02",
+        "disponible": true,
+        "unidades": 3,
+        "libros_prestados": 0
+    },
+    {
+        "titulo": "La teor\u00eda tras la producci\u00f3n de software educativo y otras reflexiones",
+        "autor": "Ana Lisette Rangel Ferm\u00edn",
+        "a\u00f1o_publicacion": "2002",
+        "disponible": true,
+        "unidades": 5,
+        "libros_prestados": 0
+    },
+    {
+        "titulo": "Ingenier\u00eda de software",
+        "autor": "Eric J. Braude",
+        "a\u00f1o_publicacion": "2003",
+        "disponible": true,
+        "unidades": 4,
+        "libros_prestados": 0
+    },
+    {
+        "titulo": "Desarrollo global de software",
+        "autor": "Aurora Vizca\u00edno Barcel\u00f3, F\u00e9lix O. Garc\u00eda Rubio, Mario G. Piattini Velthuis",
+        "a\u00f1o_publicacion": "2015",
+        "disponible": true,
+        "unidades": 3,
+        "libros_prestados": 0
+    },
+    {
+        "titulo": "aaa",
+        "autor": "Aurora Vizca\u00edno Barcel\u00f3, F\u00e9lix O. Garc\u00eda Rubio, Mario G. Piattini Velthuis",
+        "a\u00f1o_publicacion": "2015",
+        "disponible": true,
+        "unidades": 3,
+        "libros_prestados": 0
+    }
+]
