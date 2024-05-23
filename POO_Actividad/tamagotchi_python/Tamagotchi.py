@@ -5,7 +5,7 @@ class Tamagotchi:
         self.hambre = 0
         self.felicidad = 50
         self.humor = ""
-        self.estar_vivo = True
+        self.vivo = True
 
     def mostrar_estado(self):
         estado = "\n"
@@ -22,6 +22,9 @@ class Tamagotchi:
         self.hambre -= 10
         if self.hambre < 0:
             self.hambre = 0
+        self.energia -= 15
+        if self.energia < 0:
+            self.energia = 0
         self.verificar_estado()
         self.mostrar_estado()
 
@@ -61,34 +64,38 @@ class Tamagotchi:
             self.humor = "euforico"
 
     def verificar_estado(self):
-        if self.hambre > 20 and self.energia > 0:
-            self.energia -= 20
-            self.felicidad -= 30
-        self.hambre = max(0, min(self.hambre, 100))
-        self.energia = max(0, min(self.energia, 100))
-        self.felicidad = max(0, min(self.felicidad, 100))
         if self.hambre >= 20:
-            print("Hambriento")
+            self.energia -= 20
+            if self.energia < 0:
+                self.energia = 0
+            self.felicidad -= 30
+            if self.felicidad < 0:
+                self.felicidad = 0
         if self.energia == 0:
             print("Muerto")
-            self.estar_vivo = False
+            self.vivo = False
+        else:
+            self.hambre = max(0, min(self.hambre, 100))
+            self.energia = max(0, min(self.energia, 100))
+            self.felicidad = max(0, min(self.felicidad, 100))
 
 
 nombre = input("Ingrese nombre de su Tamagotchi: ")
-tamagochi = Tamagotchi(nombre)
+tamagotchi = Tamagotchi(nombre)
 
-tamagochi.mostrar_estado()
+tamagotchi.mostrar_estado()
 
-while tamagochi.estar_vivo:
-    print("1. Alimentar\n2. Jugar\n3. Dormir\n4. Salir\n")
+while tamagotchi.vivo:
+    print("\n1. Alimentar\n2. Jugar\n3. Dormir\n4. Salir")
+
     opcion = int(input("Ingrese opción: "))
 
     if opcion == 1:
-        tamagochi.alimentar()
+        tamagotchi.alimentar()
     elif opcion == 2:
-        tamagochi.jugar()
+        tamagotchi.jugar()
     elif opcion == 3:
-        tamagochi.dormir()
+        tamagotchi.dormir()
     elif opcion == 4:
         break
     else:
