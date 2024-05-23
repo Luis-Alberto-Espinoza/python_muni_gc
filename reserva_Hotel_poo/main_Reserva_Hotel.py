@@ -1,5 +1,5 @@
 import json
-from sistema_reservas import SistemaReservas  # Asegúrate de que esta importación sea correcta según tu estructura de archivos
+from sistema_reservas import SistemaReservas  
 
 def mostrar_menu():
     print("\nBienvenido al sistema de gestión de reservas:")
@@ -45,7 +45,7 @@ def ejecutar_opcion(opcion, sistema):
         print("Opción inválida. Por favor, seleccione una opción válida.")
 
 if __name__ == '__main__':
-    with open('./reserva_poo/baseDeDatos.json', 'r') as f:
+    with open('./reserva_Hotel_poo/baseDeDatos.json', 'r') as f:
         data = json.load(f)
     sistema = SistemaReservas(data)
     

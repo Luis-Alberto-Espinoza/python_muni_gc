@@ -119,7 +119,6 @@ class SistemaReservas:
             print("No se encontraron reservas para este tipo de habitación.")
 
 if __name__ == '__main__':
-    with open('./reserva_poo/baseDeDatos.json', 'r') as f:
+    with open('./reserva_Hotel_poo/baseDeDatos.json', 'r') as f:
         data = json.load(f)
     sistema = SistemaReservas(data)
-    # Aquí puedes llamar a las funciones para probar el sistema
